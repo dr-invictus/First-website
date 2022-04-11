@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMW 5 series</title>
+    <link rel="icon" type="image/svg" href="/Users/IGOR/Desktop/syte/img/BMW_White_Logo.svg" />
+    <style>
+      * {box-sizing: border-box;}
+      
+      body { 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1px 1px;
+      }
+      
+      #navbar {
+        overflow: hidden;
+        background-color: #3f3f3f;
+        padding: 10px 40px;
+        transition: 0.4s;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+      }
+      
+      #navbar a {
+        float: left;
+        color: rgb(252, 252, 252);
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+      }
+      
+      #navbar #logo {
+        font-size: 35px;
+        font-weight: bold;
+        transition: 0.4s;
+        
+      }
+      
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+       
+      
+      #navbar-left {
+        float: left;
+        padding: 12px 10px;
+      }
+      #navbar-right {
+        float: right;
+         
+      }
+      
+      @media screen and (max-width: 580px) {
+        #navbar {
+          padding: 20px 10px !important;
+        }
+        #navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        #navbar-left {
+          float: none;
+        }
+      }
+      .hero-text {
+    text-align: left;
+    position: relative;
+    padding: 10px 25px;
+    top: 80%;
+    left: 7%;
+    transform: translate(10%, 50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 160, 255);
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: hsl(202, 87%, 35%);
+    color: rgb(252, 252, 252);
+  }
+  .loaded {
+  padding: 100px 100px;
+  background-color: white;
+  transition: transform .2s;
+  width: 700px;
+  height: 900px;
+  margin:  auto;
+}
+
+.loaded:hover {
+  -ms-transform: scale(0.9); /* IE 9 */
+  -webkit-transform: scale(0.9); /* Safari 3-8 */
+  transform: scale(0.9); 
+}
+.loaded {
+   float: left;
+  width: 25%;
+  padding: 3px 3px;
+  height: 356px;
+  top: 10%;
+
+}
+.tabl{
+padding:50px 20 px;
+float: none;
+margin: 0px 0px;
+}
+.tabl:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 60px 10px;
+  float: none;
+}  
+.loadedtext {
+  font-family: Arial, Helvetica, sans-serif ;
+  text-align: left;
+  position: relative;
+  padding: 11px 25px;
+  top: -123%;
+    left: -15%;
+    transform: translate(10%, 50%);
+    color: hsl(0, 100%, 100%); 
+
+}
+.textt {
+  padding: 80px 15px;
+  font-family: Helvetica;
+}
+.all{
+  padding:20px 50 px;
+float: none;
+margin: 0px 100px;
+}
+.texttt {
+  padding: 190px 15px;
+  font-family: Helvetica;
+
+}
+.all:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 20px 40px;
+  float: left;
+}  
+
+.imagess {
+  
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2px 0px;
+}
+.contai {
+  float: left;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  
+}
+
+.overlayy {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlayy {
+  opacity: 1;
+}
+  </style>
+    
+      </head>
+<body>
+  <div id="navbar">
+     
+    <div id="navbar-left">
+      <a href="https://data.bmw.ua/pricelist/BMW_Price_List.pdf">Прайс-лист</a>
+      <a href="https://www.bmw.ua/ru/all-models/5-series/sedan/2020/bmw-5-series-sedan-models-equipment.html">Комплектации и оснащение</a>
+      <a href="https://www.bmw.ua/ru/all-models/5-series/sedan/2020/bmw-5-series-sedan-technical-data.html#tab-0">Технические характеристики</a>
+       </div>
+    <div id="navbar-right">
+      <a href="index.html" class="logo"><img class="logo2" src="/Users/IGOR/Desktop/syte/img/BMW_White_Logo.svg" alt=""></a>
+    </div>
+  </div>
+   
+    <div class="container">
+    
+    
+    
+    <div class="mySlides">
+       
+      <div class="numbertext"><div class="hero-text">
+        <h1 style= "font-size:70px">THE 5</h1>
+        <p style="font-size:20px">BMW 5 серии: особенности</p>
+        <a href ="https://www.bmw.ua/ru/ssl/offer.html?model=5_series#/bookmark=aHR0cHM6Ly9kYXRhLmJtdy51YS9mb3Jtcy9ydS9yZm8vZm9ybT9tb2RlbD01X3Nlcmllcw==">
+          <button  style=" font-size:20px ">Получить консультацию</button>
+        </a>
+      </div></div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw.jpg" style="width:100%">
+    </div>
+  
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="/Users/IGOR/Desktop/syte/img/bmw6.jpg" style="width:100%">
+    </div>
+  
+     
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw.jpg" style="width:100%" onclick="currentSlide(1)" alt="СПОРТИВНЫЙ И ЭЛЕГАНТНЫЙ ЭКСТЕРЬЕР">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw2.jpg" style="width:100%" onclick="currentSlide(2)" alt="ПРЕВОСХОДНАЯ ДИНАМИКА">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw3.jpg" style="width:100%" onclick="currentSlide(3)" alt="НЕВЕРОЯТНАЯ УПРАВЛЯЕМОСТЬ">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw4.jpg" style="width:100%" onclick="currentSlide(4)" alt="ИЗЯЩЕСТВО ФОРМ">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw5.jpg" style="width:100%" onclick="currentSlide(5)" alt="ГОНОЧНЫЙ ХАРАКТЕР">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/Users/IGOR/Desktop/syte/img/bmw6.jpg" style="width:100%" onclick="currentSlide(6)" alt="СОВРЕМЕННЫЙ И ФУНКЦИОНАЛЬНЫЙ ДИЗАЙН">
+        </div>
+      
+      
+    </div>
+  </div>
+  <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+      <div style="margin-top:10px;padding:15px 45px 1500px;font-size:20px">
+         
+         
+        <p>BMW 5 серии воплощает собой современный седан бизнес-класса. Модель отличается стильными атлетичными формами, динамичным силуэтом и лаконичным дизайном. Гладкие поверхности и четко очерченные контуры формируют элегантный экстерьер современного и высокотехнологичного автомобиля. Инновационные технологии и спортивное оснащение создают изысканный и функциональный интерьер. Невероятная динамика и инновационные технологии BMW 5 серии дополняют высочайший уровень комфорта, безопасность и, самое главное, непередаваемое удовольствие от вождения, которое автомобиль дарит как в каждодневных, так и в дальних поездках.  </p>
+         
+         
+        <h2>Особенности BMW 5 серии</h2>
+<p> Дизайн, функциональные возможности и системы помощи водителю BMW 5 серии.</p>
+ 
+<div class="tabl">
+   
+  <div class="loaded">
+  
+    
+    
+  <img src="/Users/IGOR/Desktop/syte/img/bmw7.jpg" style="width:100%" > 
+  <div class="loadedtext"> <h1 style= "font-size:70px">01</h1>
+    <p style="font-size:20px">СПОРТИВНЫЙ И ЭЛЕГАНТНЫЙ ЭКСТЕРЬЕР</p>
+    </div>
+      </div>
+      <div class="loaded">
+        <img src="/Users/IGOR/Desktop/syte/img/bmw8.jpg" style="width:100%">
+        <div class="loadedtext"> <h1 style= "font-size:70px">02</h1>
+          <p style="font-size:20px">СОВРЕМЕННЫЙ И ФУНКЦИОНАЛЬНЫЙ ИНТЕРЬЕР</p>
+          </div>
+              </div>
+              <div class="loaded">
+                <img src="/Users/IGOR/Desktop/syte/img/bmw9.jpg" style="width:100%">
+                <div class="loadedtext"> <h1 style= "font-size:70px">03</h1>
+                  <p style="font-size:20px">ЦИФРОВЫЕ ТЕХНОЛИГИИ И СИСТЕМЫ ПОМОЩИ ВОДИТЕЛЮ</p>
+                  </div>
+                      </div>
+                      <div class="loaded">
+                        <img src="/Users/IGOR/Desktop/syte/img/bmw10.jpg" style="width:100%">
+                        <div class="loadedtext"> <h1 style= "font-size:70px">04</h1>
+                          <p style="font-size:20px">ПРЕВОСХОДНАЯ УПРАВЛЯЕМОСТЬ И ДИНАМИКА</p>
+                          </div>
+                              </div>
+               
+    </div>
+    <div class="textt">
+    <h3 style= "font-size:70px">ДИЗАЙН BMW 5 СЕРИИ.</h3>
+    <p style= "font-size:30px">Впечатляющие особенности экстерьера и интерьера.</p> 
+    <p >Спортивные характеристики и ощущение уверенности BMW 5 серии выведены на принципиально новый уровень — в первую очередь за счет традиционных пропорций BMW: длинной колесной базы, удлиненного капота и плавной линии крыши. Точные контуры кузова создают удивительный контраст с обтекаемыми поверхностями уменьшенной площади, формируя современный и лаконичный образ. Особенную динамичность передней части кузова придают характерная решетка радиатора и лазерные фары BMW Laserlight, подчеркивающие инновационный характер модели. Незаметный переход между передними фарами и решеткой радиатора дополнительно подчеркивает ширину автомобиля и создает ощущение исключительной элегантности и статусности, которое дополнительно усиливается при взгляде на боковую и заднюю части кузова — вплоть до патрубков выхлопной системы свободной формы, гармонично интегрированных в задний бампер. Вместе эти детали формируют стильный и при этом спортивный образ.</p>
+  </div>
+  <div class="pictr">
+    <img class="demo pictr" src="/Users/IGOR/Desktop/syte/img/bmw11.jpg" style="width:100%" >
+  </div>
+  <div class="tabl">
+   
+    <div class="contai"><div class="container">
+    <img src="/Users/IGOR/Desktop/syte/img/bmw12.jpg" alt="Avatar" class="imagess">
+    <div class="overlayy">Решетка радиатора BMW</div>
+  </div></div>
+  <div class="contai"><div class="container">
+    <img src="/Users/IGOR/Desktop/syte/img/bmw13.jpg" alt="Avatar" class="imagess">
+    <div class="overlayy">Лазерные фары BMW Lasering</div>
+  </div></div>
+  <div class="contai"><div class="container">
+    <img src="/Users/IGOR/Desktop/syte/img/bmw14.jpg" alt="Avatar" class="imagess">
+    <div class="overlayy">Светодиодные задние фонари</div>
+  </div></div>
+    <div class="contai"><div class="container">
+      <img src="/Users/IGOR/Desktop/syte/img/bmw15.jpg" alt="Avatar" class="imagess">
+      <div class="overlayy">Патрубки выхлопной системы</div>
+  </div></div>
+  <div class="contai"><div class="container">
+    <img src="/Users/IGOR/Desktop/syte/img/bmw16.jpg" alt="Avatar" class="imagess">
+    <div class="overlayy">Комфортная подсветка салона</div>
+</div></div>
+  
+</div>
+<div class="texttt">
+  <h3 style= "font-size:40px">РАСХОД ТОПЛИВА И ВЫБРОСЫ CO2.</h3>
+  <p style= "font-size:20px">Показатели расхода топлива и уровня выхлопа CO2 зависят от размера колесных дисков и шин. Максимальная скорость ограничена электроникой. Данные в квадратных скобках относятся к автомобилям с автоматической коробкой передач. Все бензиновые двигатели соответствуют требованиям стандарта EU6 (дизельные – EU5). Расход топлива определяется в испытательном цикле ЕЭК (93/116/EC), имеющем следующий состав: приблизительно одна треть приходится на городской режим и две трети — на загородный (по пройденному расстоянию). Уровень выброса CO2 измеряется одновременно с расходом топлива в том же цикле. Показатели расхода топлива рассчитываются для автомобилей в стандартной комплектации. Установка специального оборудования может существенно повлиять на расход топлива и динамические характеристики. Модели, представленные на веб-страницах, могут быть оснащены дополнительным оборудованием и аксессуарами, которые не входят в базовую комплектацию. Из-за различий в требованиях на рынках других стран характеристики моделей, стандартная и дополнительная комплектации не всегда соответствуют описанным в тексте. Точную информацию можно получить у Вашего ближайшего дилера BMW. Компания BMW оставляет за собой право на внесение изменений в конструкцию и комплектацию автомобилей без предварительного уведомления, а также право на ошибку. Оборудование, предназначенное исключительно для отдельных рынков, здесь не представлено. Масса без нагрузки (ЕС) в кг: значения указаны с учетом заполнения бака на 90%, водителя массой 68 кг и 7 кг багажа. Значения собственной массы приведены для автомобиля в стандартной комплектации. Установка дополнительного оборудования может привести к увеличению указанного значения. Номинальная мощность: BMW рекомендует использовать неэтилированный бензин Премиум Евро-95. Допускается также использование неэтилированного бензина с исследовательским октановым числом 91 и выше, содержащего не более 10% этанола (E10). Указанные тягово-динамические характеристики и расход топлива достигаются при использовании бензина Супер Евро-98.</p> 
+  
+</div>
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "15px 35px";
+      document.getElementById("logo").style.fontSize = "15px";
+    } else {
+      document.getElementById("navbar").style.padding = "5px 10px";
+      document.getElementById("logo").style.fontSize = "20px";
+    }
+  }
+  </script>
+     
+     
+    
+    
+
+</body>
+</html>
